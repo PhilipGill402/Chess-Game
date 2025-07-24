@@ -18,7 +18,6 @@ A fully interactive, two-player chess game built using **Python** and **Pygame**
 ---
 
 ## 📸 Screenshots
-*(Add screenshots here by placing image files in the repo and linking them)*
 
 Example:
 ![Gameplay Screenshot](screenshots/gameplay.png)
@@ -38,7 +37,7 @@ pip install pygame
 ### Run the Game
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/chess-game.git
+   git clone https://github.com/PhilipGill402/chess-game.git
    cd chess-game
    ```
 2. Start the game:
@@ -78,7 +77,7 @@ chess-game/
 
 ## 🚀 Future Roadmap
 - Add **AI opponent** for single-player mode.
-- Implement **move highlighting**, **undo/redo**, and **sound effects**.
+- Implement **move highlighting** and **sound effects**.
 - Improve animations and add theme customization.
 
 ---
