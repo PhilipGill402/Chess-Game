@@ -76,29 +76,29 @@ class Board:
                 if piece.color != 'n':
                     strPiece = str(piece)
                     if strPiece == str(('b', 1)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\black_pawn.png"
+                        address = "Pieces/black_pawn.png"
                     elif strPiece == str(('b', 3)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\black_bishop.png"
+                        address = "Pieces/black_bishop.png"
                     elif strPiece == str(('b', 4)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\black_knight.png"
+                        address = "Pieces/black_knight.png"
                     elif strPiece == str(('b', 5)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\black_rook.png"
+                        address = "Pieces/black_rook.png"
                     elif strPiece == str(('b', 9)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\black_queen.png"
+                        address = "Pieces/black_queen.png"
                     elif strPiece == str(('b', 1000)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\black_king.png"
+                        address = "Pieces/black_king.png"
                     elif strPiece == str(('w', 1)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\white_pawn.png"
+                        address = "Pieces/white_pawn.png"
                     elif strPiece == str(('w', 3)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\white_bishop.png"
+                        address = "Pieces/white_bishop.png"
                     elif strPiece == str(('w', 4)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\white_knight.png"
+                        address = "Pieces/white_knight.png"
                     elif strPiece == str(('w', 5)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\white_rook.png"
+                        address = "Pieces/white_rook.png"
                     elif strPiece == str(('w', 9)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\white_queen.png"
+                        address = "Pieces/white_queen.png"
                     elif strPiece == str(('w', 1000)):
-                        address = "C:\\Users\\pgill\\Documents\\Coding\\Chess\\Pieces\\white_king.png"
+                        address = "Pieces/white_king.png"
                     
                     piece.setPiece(surface, address)
 
@@ -724,7 +724,6 @@ class Board:
         
         
         if isCheckMate:
-            print('checkmate')
             return True
         else:
             return False
@@ -788,7 +787,6 @@ class Board:
         
         
         if isStalemate:
-            print('stalemate')
             return True
         else:
             return False

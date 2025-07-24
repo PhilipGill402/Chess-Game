@@ -8,14 +8,16 @@ class Game():
         self._init()
 
     def update(self):
-        if self.board.isCheckMate(self.turn):
-            print('checkmate')
-        if self.board.isStalemate(self.turn):
-            print('stalemate')
-        #print(self.board.minimax(3, self.turn, True))
         self.board.draw(self.surface)
         self.drawMoves(self.validMoves)
         pygame.display.update()
+        msg = None
+        color = "Black" if self.turn == "w" else "White"
+        if (self.board.isCheckMate(self.turn)):
+            msg = color + " wins!"
+        elif (self.board.isStalemate(self.turn)):
+            msg = "Stalemate!"
+        return msg
     
     def _init(self):
         self.selected = None
