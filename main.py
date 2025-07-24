@@ -109,6 +109,8 @@ def startScreen():
             elif event.type == pygame.MOUSEBUTTONUP:
                 if playOp.checkForInput(pos):
                     main()
+                    running = False
+                    break
                 elif quit.checkForInput(pos):
                     running = False
 
@@ -136,7 +138,6 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
             elif event.type == pygame.MOUSEBUTTONDOWN:
-                #gameBoard.minimax(3, 'b', True)
                 pos = pygame.mouse.get_pos()
                 row, col = getPos(pos)                
                 piece = gameBoard.board[row][col]
